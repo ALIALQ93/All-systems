@@ -49,8 +49,7 @@
 
   .brand-banner {
     display: flex; align-items: center; justify-content: center; gap: 20px;
-    padding: 28px 24px 0;
-    animation: fadeDown 0.7s cubic-bezier(.22,1,.36,1) both;
+    padding: 28px 24px 0; animation: fadeDown 0.7s cubic-bezier(.22,1,.36,1) both;
   }
   .brand-logo-img {
     width: 72px; height: 72px; object-fit: contain;
@@ -153,21 +152,22 @@
   .card:hover .card-arrow svg { stroke: #fff; }
   .card-arrow svg { width: 15px; height: 15px; stroke: var(--c-accent); transition: stroke 0.3s; }
 
-  .c1 { --c-accent:#3b82f6; --c-bg:#eff6ff; --c-shadow:rgba(59,130,246,0.2); }
-  .c2 { --c-accent:#8b5cf6; --c-bg:#f5f3ff; --c-shadow:rgba(139,92,246,0.2); }
-  .c3 { --c-accent:#06b6d4; --c-bg:#ecfeff; --c-shadow:rgba(6,182,212,0.2); }
-  .c4 { --c-accent:#16a34a; --c-bg:#f0fdf4; --c-shadow:rgba(22,163,74,0.2); }
-  .c5 { --c-accent:#b45309; --c-bg:#fffbeb; --c-shadow:rgba(180,83,9,0.2); }
-  .c6 { --c-accent:#ef4444; --c-bg:#fef2f2; --c-shadow:rgba(239,68,68,0.2); }
-  .c7 { --c-accent:#ec4899; --c-bg:#fdf2f8; --c-shadow:rgba(236,72,153,0.2); }
-  .c8 { --c-accent:#6366f1; --c-bg:#eef2ff; --c-shadow:rgba(99,102,241,0.2); }
-  .c9 { --c-accent:#0ea5e9; --c-bg:#f0f9ff; --c-shadow:rgba(14,165,233,0.2); }
+  .c1  { --c-accent:#3b82f6; --c-bg:#eff6ff; --c-shadow:rgba(59,130,246,0.2); }
+  .c2  { --c-accent:#8b5cf6; --c-bg:#f5f3ff; --c-shadow:rgba(139,92,246,0.2); }
+  .c3  { --c-accent:#06b6d4; --c-bg:#ecfeff; --c-shadow:rgba(6,182,212,0.2); }
+  .c4  { --c-accent:#16a34a; --c-bg:#f0fdf4; --c-shadow:rgba(22,163,74,0.2); }
+  .c5  { --c-accent:#b45309; --c-bg:#fffbeb; --c-shadow:rgba(180,83,9,0.2); }
+  .c6  { --c-accent:#ef4444; --c-bg:#fef2f2; --c-shadow:rgba(239,68,68,0.2); }
+  .c7  { --c-accent:#ec4899; --c-bg:#fdf2f8; --c-shadow:rgba(236,72,153,0.2); }
+  .c8  { --c-accent:#6366f1; --c-bg:#eef2ff; --c-shadow:rgba(99,102,241,0.2); }
+  .c9  { --c-accent:#0ea5e9; --c-bg:#f0f9ff; --c-shadow:rgba(14,165,233,0.2); }
+  .c10 { --c-accent:#f97316; --c-bg:#fff7ed; --c-shadow:rgba(249,115,22,0.2); }
 
-  .card:nth-child(1){animation-delay:0.08s} .card:nth-child(2){animation-delay:0.14s}
-  .card:nth-child(3){animation-delay:0.20s} .card:nth-child(4){animation-delay:0.26s}
-  .card:nth-child(5){animation-delay:0.32s} .card:nth-child(6){animation-delay:0.38s}
-  .card:nth-child(7){animation-delay:0.44s} .card:nth-child(8){animation-delay:0.50s}
-  .card:nth-child(9){animation-delay:0.56s}
+  .card:nth-child(1){animation-delay:0.07s} .card:nth-child(2){animation-delay:0.13s}
+  .card:nth-child(3){animation-delay:0.19s} .card:nth-child(4){animation-delay:0.25s}
+  .card:nth-child(5){animation-delay:0.31s} .card:nth-child(6){animation-delay:0.37s}
+  .card:nth-child(7){animation-delay:0.43s} .card:nth-child(8){animation-delay:0.49s}
+  .card:nth-child(9){animation-delay:0.55s} .card:nth-child(10){animation-delay:0.61s}
 
   @keyframes cardIn  { to{opacity:1;transform:translateY(0)} }
   @keyframes fadeDown{ from{opacity:0;transform:translateY(-24px)} to{opacity:1;transform:translateY(0)} }
@@ -229,7 +229,7 @@
   </header>
 
   <div class="stats-bar">
-    <div class="stat-pill">📦 <span class="txt-ar">الأنظمة المتاحة</span><span class="txt-en">Available Systems</span>&nbsp;<span>9</span></div>
+    <div class="stat-pill">📦 <span class="txt-ar">الأنظمة المتاحة</span><span class="txt-en">Available Systems</span>&nbsp;<span>10</span></div>
     <div class="stat-pill">✅ <span class="txt-ar">حالة الخدمة</span><span class="txt-en">Service Status</span>&nbsp;<span style="color:#16a34a" class="txt-ar">متاح</span><span style="color:#16a34a" class="txt-en">Online</span></div>
     <div class="stat-pill">🌿 <span class="txt-ar">روزميري للحلول البرمجية</span><span class="txt-en">Rosemary Solutions</span></div>
   </div>
@@ -331,7 +331,6 @@
       <div class="card-footer"><span class="card-tag">Vehicles</span><div class="card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></div></div>
     </a>
 
-    <!-- Card 9 - NEW -->
     <a href="https://sub-accounts-management.vercel.app/" target="_blank" class="card c9">
       <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 20c0-3-2-5.5-5-6.5"/></svg></div>
       <div class="card-body">
@@ -341,6 +340,18 @@
         <div class="card-desc-en">Manage and monitor sub-accounts and permissions systematically</div>
       </div>
       <div class="card-footer"><span class="card-tag">Accounts</span><div class="card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></div></div>
+    </a>
+
+    <!-- Card 10 - NEW -->
+    <a href="https://alialq93.github.io/Disbursement-Request/" target="_blank" class="card c10">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div>
+      <div class="card-body">
+        <div class="card-title-ar">طلبات الصرف</div>
+        <div class="card-title-en">Disbursement Request</div>
+        <div class="card-desc-ar">تقديم ومتابعة طلبات الصرف المالي والموافقات الإدارية</div>
+        <div class="card-desc-en">Submit and track financial disbursement requests and approvals</div>
+      </div>
+      <div class="card-footer"><span class="card-tag">Disbursement</span><div class="card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></div></div>
     </a>
 
   </div>
